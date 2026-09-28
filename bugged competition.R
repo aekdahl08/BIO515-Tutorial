@@ -1,7 +1,7 @@
 #Daire Carroll 2025 as part of the BIO214 course
 #Code to explore the influence of scramble and contest competition on populaiton growth
 
-scrambel <- function(R,K,N0,t){
+scramble <- function(R,K,N0,t){
   
   N <- c(N0)
   
@@ -30,7 +30,7 @@ contest <- function(R,K,N0,t){
         (N0*(R-1) + K)
     )
     N[i] <- N0
-  #}
+  }
   
   plot(N, xlab = "Time steps", ylab = "N")
   lines(N)
@@ -41,7 +41,7 @@ contest <- function(R,K,N0,t){
 
 ###A few examples of scramble competition
 
-scrumble(R = 1.1, K = 100, N0 = 10, t = 100)
+scramble(R = 1.1, K = 100, N0 = 10, t = 100)
 
 scramble(R = 5, K = 100, N0 = 10, t = 100)
 
